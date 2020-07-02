@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/home', 'UserController@index');
+Route::get('/viewmembers', 'MemberController@index');
+Route::get('/getmembers', 'MemberController@test');
+Route::post('/add_members', 'MemberController@store');
+Route::get('/member', 'MemberController@test2');
